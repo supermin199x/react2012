@@ -1,22 +1,40 @@
-import React from "react";
+import React, { Component } from "react";
 import "../pages/Login.css";
-import Navbar from "../components/Navbar";
 
-const Login = () => {
-	return (
-		<div className="login">
-			<div className="container">
-				<h2>เข้าสู่ระบบ</h2>
-				<form>
-					<label for="username">ชื่อผู้ใช้งาน</label>
-					<input id="username" type="text" />
-					<label for="password">รหัสผ่าน</label>
-					<input id="password" type="password"/>
-					<button>เข้าสู่ระบบ</button>
-				</form>
+class Login extends Component {
+	state = {
+		username: '',
+		password: ''
+	}
+
+	onInputChange = (event) => {
+		this.setState({
+			[event.target.name]: event.target.value
+		})
+		console.log(this.state);
+	}
+
+	onSubmit = (event) => {
+		event.preventDefault();
+		console.log(this.state);
+	}
+
+	render() {
+		return (
+			<div className="login">
+				<div className="container">
+					<h2>เข้าสู่ระบบ</h2>
+					<form onSubmit={this.onSubmit}>
+						<label for="username">ชื่อผู้ใช้งาน</label>
+						<input id="username" name="username" type="text" onChange={this.onInputChange}/>
+						<label for="password">รหัสผ่าน</label>
+						<input id="password" name="password" type="password" onChange={this.onInputChange}/>
+						<button type="submit">เข้าสู่ระบบ</button>
+					</form>
+				</div>
 			</div>
-		</div>
-	);
-};
+		)
+	}
+}
 
 export default Login;

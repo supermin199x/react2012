@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 
 const Navbar = (props) => {
   const [dataState, setDataState] = useState({
-    home: "/react2012",
+    home: "/",
     registerMember: "/registermember",
     registerOrg: "/registerorg",
     login: "/login",
