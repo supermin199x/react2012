@@ -8,6 +8,7 @@ const Navbar = (props) => {
     registerMember: "/registermember",
     registerOrg: "/registerorg",
     login: "/login",
+    exam: "/listpageexam",
   });
 
   return (
@@ -26,6 +27,11 @@ const Navbar = (props) => {
         <li>
           <Link to={dataState.registerOrg} className="nav-item">
             องค์กร
+          </Link>
+        </li>
+        <li>
+          <Link to={dataState.exam} className="nav-item">
+          exam
           </Link>
         </li>
         <li>

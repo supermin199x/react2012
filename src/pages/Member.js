@@ -9,6 +9,7 @@ const Member = () => {
 				<Navbar />
 				<div className="member-container">
 					<h2>Member</h2>
+					
 				</div>
 			</div>
     );
