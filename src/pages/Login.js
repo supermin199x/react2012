@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import Navbar from "../components/Navbar";
 import "../pages/Login.css";
 
 class Login extends Component {
@@ -22,7 +23,8 @@ class Login extends Component {
 	render() {
 		return (
 			<div className="login">
-				<div className="container">
+				<Navbar />
+				<div className="login-form">
 					<h2>เข้าสู่ระบบ</h2>
 					<form onSubmit={this.onSubmit}>
 						<label for="username">ชื่อผู้ใช้งาน</label>

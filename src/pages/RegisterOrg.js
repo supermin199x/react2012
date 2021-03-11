@@ -1,5 +1,7 @@
 import React, { Component } from "react";
 import "../pages/RegisterOrg.css";
+import Navbar from "../components/Navbar";
+
 
 class RegisterOrg extends Component {
 	state = {
@@ -24,7 +26,8 @@ class RegisterOrg extends Component {
 	render() {
 		return (
 			<div className="registerorg">
-				<div className="container">
+				<Navbar />
+				<div className="registerorg-form">
 					<h2>ลงทะเบียนองค์กร</h2>
 					<form onSubmit={this.onSubmit}>
 						<label for="username">ชื่อผู้ใช้งาน</label>

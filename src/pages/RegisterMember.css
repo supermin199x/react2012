@@ -1,0 +1,42 @@
+
+.registerMember-form {
+    padding: 20px;
+    margin-top: 100px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .registerMember-form h2 {
+    text-align: center;
+  }
+  
+  input,
+  button {
+    border: 1px solid gray;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+      "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+      sans-serif;
+    font-size: 16px;
+    box-sizing: border-box;
+    width: 100%;
+    padding: 8px;
+    margin-top: 20px;
+  }
+  
+  button:hover {
+    background-color: #f44336;
+    color: white;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .registerMember-form {
+      margin-top: 10px;
+      padding: 20px;
+      max-width: 800px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  
+  }
+  

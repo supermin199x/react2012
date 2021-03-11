@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import "../pages/RegisterMember.css";
+import Navbar from "../components/Navbar";
 
 class RegisterMember extends Component {
 	state = {
@@ -24,7 +25,8 @@ class RegisterMember extends Component {
 	render() {
 		return (
 			<div className="registerMember">
-				<div className="container">
+				<Navbar />
+				<div className="registerMember-form">
 					<h2>ลงทะเบียน</h2>
 					<form onSubmit={this.onSubmit}>
 						<label for="username">ชื่อผู้ใช้งาน</label>
