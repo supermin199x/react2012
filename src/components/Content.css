@@ -1,0 +1,12 @@
+.landing {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10vh;
+}
+
+.landing img {
+  max-width: 100%;
+  height: auto !important;
+}
