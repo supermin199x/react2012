@@ -8,7 +8,7 @@ const Navbar = (props) => {
     registerMember: "/registermember",
     registerOrg: "/registerorg",
     login: "/login",
-    exam: "/listpageexam",
+    exam: "/example",
   });
 
   return (

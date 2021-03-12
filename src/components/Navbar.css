@@ -13,7 +13,7 @@ nav {
   top: 0;
   height: 10vh;
   width: 100vw;
-  background-color: #f44336;
+  background-color: #a51c30;
   box-shadow: 0 0 5px rgba(0, 0, 0, 2);
 }
 
@@ -34,7 +34,7 @@ nav {
 }
 
 .nav-item:hover {
-  color: black;
+  text-decoration: underline;
 }
 
 @media screen and (max-width: 768px) {
@@ -58,6 +58,6 @@ nav {
   }
 
   .nav-item:hover {
-    color: black;
+    text-decoration: underline;
   }
 }

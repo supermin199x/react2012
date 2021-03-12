@@ -5,7 +5,7 @@ import Login from './pages/Login';
 import RegisterMember from './pages/RegisterMember';
 import RegisterOrg from './pages/RegisterOrg';
 import Member from './pages/Member';
-import Listpageexam from './pages/Listpageexam';
+import Example from './pages/Example';
 import StateXObject from './exam/StateXObject';
 import Error404 from './pages/Error404';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
@@ -21,7 +21,7 @@ const App = () => {
 					<Route path="/registermember" component={RegisterMember}/>
 					<Route path="/registerOrg" component={RegisterOrg}/>
 					<Route path="/member" component={Member}/>
-					<Route path="/listpageexam" component={Listpageexam}/>
+					<Route path="/example" component={Example}/>
 					<Route path="/todolist" component={StateXObject}/>
 					<Route component={Error404}></Route>
 				</Switch>

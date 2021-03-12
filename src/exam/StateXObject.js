@@ -1,7 +1,5 @@
 import React, { useState } from "react";
 import "./StateXObject.css";
-import {Link} from 'react-router-dom';
-
 
 const emptyNote = {
   content: "",
@@ -136,21 +134,8 @@ const StateXObject = () => {
     );
   }
 
-  const [dataState, setDataState] = useState({
-    listpageexam: "/listpageexam",
-  });
-
   return (
     <section className="app-section">
-      <nav>
-        <ul className="nav-links">
-          <li>
-          <Link to={dataState.listpageexam} className="nav-item">
-            Exam
-          </Link>
-          </li>
-        </ul>
-    	</nav>
       <div className="app-container">
         <h3>เพิ่มโน๊ต</h3>
         <form onSubmit={onNoteSubmit}>

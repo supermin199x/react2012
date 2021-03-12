@@ -20,7 +20,7 @@ body {
   flex-direction: column;
   width: 200px;
   height: 100px;
-  background-color: #f44336;
+  background-color: #a51c30;
   margin-bottom: 20px;
   border-radius: 5px;
 
@@ -42,7 +42,7 @@ body {
     flex-direction: column;
     width: 125px;
     height: 75px;
-    background-color: #f44336;
+    background-color: #a51c30;
     margin-bottom: 20px;
     border-radius: 5px;
     margin: 40px 20px 10px 20px;
