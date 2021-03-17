@@ -67,12 +67,22 @@
     color: #d28e98;
   }
   
-  .content {
+  content {
+    display: flex;
+    flex-direction: row;
     grid-area: content;
     width: 100%;
     height: 100%;
     justify-content: center;
     align-self: center;
+  }
+
+  .content-01 {
+    display: block;
+  }
+
+  .content-02 {
+    display: none;
   }
 
   @media screen and (max-width: 768px) {

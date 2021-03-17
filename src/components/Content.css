@@ -5,7 +5,21 @@
   align-items: center;
 }
 
-.landing img {
-  max-width: 100%;
-  height: auto !important;
+.h-box {
+  padding: 100px;
+  margin-top: 44px;
+  width: 100vw;
+  height: 100vh;
+}
+
+.header {
+  text-indent: 5rem;
+}
+.title {
+  text-indent: 10rem;
+}
+
+
+@media screen and (max-width: 768px) {
+
 }

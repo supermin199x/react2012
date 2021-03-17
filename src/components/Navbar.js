@@ -19,7 +19,7 @@ const Navbar = (props) => {
         </li>
         <li>
           <Link to={dataState.Projects} className="nav-item">
-          My Project
+            My Project
           </Link>
         </li>
         <li>

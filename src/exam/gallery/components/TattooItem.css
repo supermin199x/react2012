@@ -1,0 +1,6 @@
+.tattoo-item img {
+    display: block;
+    width: 100%;
+    cursor: zoom-in;
+    border-radius: 3px;
+}

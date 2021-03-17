@@ -4,6 +4,7 @@ import Content from "../components/Content";
 import "..//pages/Home.css";
 
 const Home = () => {
+	let h1 = "<h1></h1>"
 	return (
 		<div className="home">
 			<Navbar />
