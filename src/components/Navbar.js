@@ -5,10 +5,8 @@ import { Link } from "react-router-dom";
 const Navbar = (props) => {
   const [dataState, setDataState] = useState({
     home: "/",
-    registerMember: "/registermember",
-    registerOrg: "/registerorg",
-    login: "/login",
-    exam: "/example",
+    contact: "/contact",
+    Projects: "/projects",
   });
 
   return (
@@ -16,27 +14,17 @@ const Navbar = (props) => {
       <ul className="nav-links">
         <li>
           <Link to={dataState.home} className="nav-item">
-            Home
+            Min199x
           </Link>
         </li>
         <li>
-          <Link to={dataState.registerMember} className="nav-item">
-            สมัครสมาชิก
+          <Link to={dataState.Projects} className="nav-item">
+          My Project
           </Link>
         </li>
         <li>
-          <Link to={dataState.registerOrg} className="nav-item">
-            องค์กร
-          </Link>
-        </li>
-        <li>
-          <Link to={dataState.exam} className="nav-item">
-          exam
-          </Link>
-        </li>
-        <li>
-          <Link to={dataState.login} className="nav-item">
-            เข้าสู่ระบบ
+          <Link to={dataState.contact} className="nav-item">
+            Contact
           </Link>
         </li>
       </ul>

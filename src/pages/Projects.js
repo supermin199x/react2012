@@ -1,9 +1,9 @@
 import React, {useState} from 'react';
-import '../pages/Example.css';
+import '../pages/Projects.css';
 import StateXObject from "../exam/StateXObject"
 import {Link} from 'react-router-dom';
 
-const Listpageexam = () => {
+const Projects = () => {
     const [dataState, setDataState] = useState({
         home: "/",
 		todolist: "/todolist",
@@ -15,30 +15,14 @@ const Listpageexam = () => {
 				<ul className="aside-links">
 					<li>
 						<Link to={dataState.home} className="aside-item">
-							Home
+							 Min199x
 						</Link>
 					</li>
 				</ul>
-				<p className="line"></p>
 				<ul className="exam-links">
 					<li>
 						<Link to={dataState.todolist} className="exam-item">
 							Project 01 <a>React State & Object</a>
-						</Link>
-					</li>
-					<li>
-						<Link to={dataState.todolist} className="exam-item">
-							Project 02 <a>React State & Object</a>
-						</Link>
-					</li>
-					<li>
-						<Link to={dataState.todolist} className="exam-item">
-							Project 03 <a>React State & Object</a>
-						</Link>
-					</li>
-					<li>
-						<Link to={dataState.todolist} className="exam-item">
-							Project 04 <a>React State & Object</a>
 						</Link>
 					</li>
 				</ul>
@@ -50,4 +34,4 @@ const Listpageexam = () => {
     );
 }
 
-export default Listpageexam;
+export default Projects;

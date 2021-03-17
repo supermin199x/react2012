@@ -19,7 +19,7 @@
     top: 0;
     height: 100vh;
     width: 330px;
-    background-color:#a51c30 ;
+    background-color:#323232 ;
     box-shadow: 0 0 5px rgba(0, 0, 0, 2);
     overflow-x:hidden;
     overflow-y: scroll;
@@ -59,7 +59,14 @@
   }
   .exam-item a {
     color: #d28e98;
+    text-decoration: none;
   }
+
+  .sub-home {
+    font-size: 12px;
+    color: #d28e98;
+  }
+  
   .line {
     width: 90%;
     height: 1px;
@@ -74,6 +81,9 @@
     height: 100%;
     justify-content: center;
     align-self: center;
+  }
+  .menu {
+    display: none;
   }
 
   @media screen and (max-width: 768px) {
@@ -91,7 +101,7 @@
       top: 0;
       height: 293px;
       width: 100%;
-      background-color:#a51c30 ;
+      background-color:#323232 ;
       box-shadow: 0 0 5px rgba(0, 0, 0, 2);
       overflow-x:hidden;
       overflow-y: hidden;
@@ -105,6 +115,7 @@
     .exam-links {
       height: 193px;
       width: 100%;
+      display: none;
     }
     .line {
       width: 80%;
@@ -120,5 +131,16 @@
       height: 100%;
       justify-content: center;
       align-self: center;
+    }
+    .menu {
+      font-weight: bold;
+      font-size: 12px;
+      position: absolute;
+      display: block;
+      height: fit-content;
+      width: fit-content;
+      left: 10px;
+      bottom: 10px;
+      border-radius: 5px;
     }
   }
