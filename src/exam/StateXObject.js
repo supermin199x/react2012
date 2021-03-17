@@ -80,8 +80,8 @@ const StateXObject = () => {
   const allNotesElements = allNotes.map((theNote) => {
     return (
       <div key={theNote.id} className="app-note">
-        <p>{theNote.content}</p>
-        <h5>{theNote.author}</h5>
+        <p className="content-item">{theNote.content}</p>
+        <h5 className="author-item">{theNote.author}</h5>
         <p>
           <a
             onClick={() => {
@@ -158,7 +158,7 @@ const StateXObject = () => {
             />
           </p>
           <p>
-            <button type="submit">เพิ่มลงไป</button>
+            <button type="submit">เพิ่ม</button>
           </p>
         </form>
         <div className="app-notes">{allNotesElements}</div>
