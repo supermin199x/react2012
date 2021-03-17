@@ -1,7 +1,7 @@
 
 .contact-form {
+  margin-top: 50px;
   padding: 20px;
-  margin-top: 100px;
   max-width: 800px;
   margin-left: auto;
   margin-right: auto;
@@ -13,10 +13,10 @@
   text-align: center;
   font-size: 50px;
   margin-bottom: 20px;
+  margin-top: 10px;
 }
 
 .item-form {
-  
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -33,6 +33,7 @@ input {
   padding: 8px;
   margin-top: 20px;
   
+  
 }
 
 label {
@@ -46,14 +47,41 @@ button:hover {
   background-color: #323232;
   color: white;
 }
+#username, #iusername {
+  color:#282741;
+}
+#Email, #iEmail{
+  color:#2980b9;
+}
+#Line, #iLine {
+  color:#ffbe53;
+}
+#Github, #iGithub {
+  color:#ff6138;
+}
+
+
+
 
 @media screen and (max-width: 768px) {
   .contact-form {
-    margin-top: 10px;
+    margin-top: 50px;
     padding: 20px;
     max-width: 800px;
     margin-left: auto;
     margin-right: auto;
+  }
+  #username {
+    color:#282741;
+  }
+  #Email {
+    color:#2980b9;
+  }
+  #Line {
+    color:#ffbe53;
+  }
+  #Github {
+    color:#ff6138;
   }
 
 }

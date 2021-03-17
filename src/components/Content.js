@@ -1,8 +1,8 @@
 import React from "react";
 import "../components/Content.css";
+import Video from "../components/video.mp4"
 
 const Content = () => {
-
 
 	const state = {
 		htmlopen: "<html>",
@@ -18,9 +18,7 @@ const Content = () => {
 	return (
 		<div className="landing">
 			<section className="h-box">
-				<h1>{state.htmlopen}</h1>
-
-				<h1>{state.htmlclose}</h1>
+				<h1 className="hello">Hello, Min</h1>
 			</section>
 		</div>
 	);

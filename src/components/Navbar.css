@@ -35,6 +35,7 @@ nav {
 
 .nav-item:hover {
   text-decoration: underline;
+  color:#ffbe53;
 }
 
 @media screen and (max-width: 768px) {

@@ -40,6 +40,7 @@
   }
   .aside-item:hover {
     text-decoration: underline;
+    color:#ffbe53;
   }
   .exam-links {
     padding: 10px 10px 10px 30px;
@@ -114,7 +115,6 @@
     .exam-links {
       height: 193px;
       width: 100%;
-      display: none;
     }
     .content {
       grid-area: content;

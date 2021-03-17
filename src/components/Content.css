@@ -6,10 +6,24 @@
 }
 
 .h-box {
-  padding: 100px;
-  margin-top: 44px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
   width: 100vw;
-  height: 100vh;
+  height: 100%;
+  background-color:#2980b9;
+}
+
+.hello {
+  font-size: 90px;
+  color: #ffbe53;
+  transition: transform 1s ease-out;
+}
+
+.hello:hover {
+  transition: transform 1s ease-in;
+  transform: scale(1.5, 1.5);
 }
 
 .header {
@@ -19,7 +33,15 @@
   text-indent: 10rem;
 }
 
-
 @media screen and (max-width: 768px) {
-
+  .hello {
+    font-size: 90px;
+    color: #ffbe53;
+    transition: transform 0.5s ease-out;
+  }
+  
+  .hello:hover {
+    transition: transform 0.5s ease-in;
+    transform: scale(1.05, 1.05);
+  }
 }
