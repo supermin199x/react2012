@@ -35,13 +35,13 @@
 
 @media screen and (max-width: 768px) {
   .hello {
-    font-size: 90px;
+    font-size: 50px;
     color: #ffbe53;
     transition: transform 0.5s ease-out;
   }
   
   .hello:hover {
     transition: transform 0.5s ease-in;
-    transform: scale(1.05, 1.05);
+    transform: scale(1.25, 1.25);
   }
 }
