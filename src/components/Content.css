@@ -33,6 +33,25 @@
   text-indent: 10rem;
 }
 
+#username, #iusername {
+  color:#282741;
+}
+#Email, #iEmail{
+  color:#2980b9;
+}
+#Line, #iLine {
+  color:#ffbe53;
+}
+#Github, #iGithub {
+  color:#ff6138;
+}
+
+canvas {
+  display: block;
+  width: 100vw;
+  height: 100vh;
+}
+
 @media screen and (max-width: 768px) {
   .hello {
     font-size: 50px;

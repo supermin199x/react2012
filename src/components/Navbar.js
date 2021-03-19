@@ -7,6 +7,7 @@ const Navbar = (props) => {
     home: "/",
     contact: "/contact",
     Projects: "/projects",
+    login: "/login",
   });
 
   return (
@@ -25,6 +26,11 @@ const Navbar = (props) => {
         <li>
           <Link to={dataState.contact} className="nav-item">
             Contact
+          </Link>
+        </li>
+        <li>
+          <Link to={dataState.login} className="nav-item">
+            Login
           </Link>
         </li>
       </ul>

@@ -1,6 +1,7 @@
 import React from "react";
 import "./App.css";
 import Home from './pages/Home';
+import Login from './pages/Login';
 import Contact from './pages/Contact';
 import Projects from './pages/Projects';
 import StateXObject from './exam/StateXObject';
@@ -19,6 +20,7 @@ const App = () => {
 					<Route path="/projects" component={Projects}/>
 					<Route path="/todolist" component={StateXObject}/>
 					<Route path="/gallery" component={Gallery}/>
+					<Route path="/login" component={Login}/>
 					<Route component={Error404}></Route>
 				</Switch>
 			</Router>
