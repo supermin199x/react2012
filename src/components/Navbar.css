@@ -3,20 +3,14 @@
   margin: 0px;
   padding: 0px;
 }
-
 body {
   font-family: sans-serif;
 }
-
 nav {
-  position: fixed;
-  top: 0;
   height: 44px;
-  width: 100vw;
   background-color: #323232;
   box-shadow: 0 0 5px rgba(0, 0, 0, 2);
 }
-
 .nav-links {
   display: flex;
   list-style: none;
@@ -26,22 +20,37 @@ nav {
   align-items: center;
   margin-right: auto;
 }
-
 .nav-item {
   color: white;
   text-decoration: none;
   font-size: 20px;
 }
-
+.nav-home {
+  color: white;
+  text-decoration: none;
+  font-size: 20px;
+}
 .nav-item:hover {
   text-decoration: underline;
   color:#ffbe53;
 }
+.nav-home:hover {
+  text-decoration: underline;
+  color:#ffbe53;
+}
+.nav-menu {
+  display: none;
+}
+
+.logoMenu {
+  display: none;
+}
 
 @media screen and (max-width: 768px) {
-
   nav {
-    position: fixed;
+    height: 44px;
+    background-color: #323232;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 2);
   }
   .nav-links {
     display: flex;
@@ -57,8 +66,87 @@ nav {
     text-decoration: none;
     font-size: 18px;
   }
-
   .nav-item:hover {
     text-decoration: underline;
   }
+  .nav-home:hover {
+    text-decoration: underline;
+  }
+  .nav-home {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+  }
+  .logoMenu {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 500px) {
+
+  nav {
+    position: relative;
+    background: #323232;
+  }
+
+  .line {
+    width: 30px;
+    height: 3px;
+    background: white;
+    margin: 5px;
+  }
+
+  .hamberger {
+    position: absolute;
+    cursor: pointer;
+    right: 5%;
+    top: 50%;
+    transform: translate(-5%, -50%);
+    z-index: 2;
+  }
+
+  .hamberger:hover {
+    border: 2px solid white;
+    border-radius: 3px;
+  }
+
+  .nav-links {
+    position: fixed;
+    background: #323232;
+    height: 100vh;
+    width: 100%;
+    flex-direction: column;
+    clip-path: circle(100px at 90% -10%);
+    -webkit-clip-path: circle(10px at 90% -10%);
+    transition: all 1s ease-out;
+    pointer-events: none;
+    
+  }
+
+  .nav-links.open {
+    clip-path: circle(100px at 90% -10%);
+    -webkit-clip-path: circle(1000px at 90% -10%);
+    pointer-events: all;
+  }
+
+  .logoMenu {
+    display: block;
+    z-index: 1;
+  }
+
+  .nav-menu {    
+    display: block;
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+  }
+
+  .nav-menu:hover {
+    text-decoration: underline;
+    color:#ffbe53;
+  }
+
 }
