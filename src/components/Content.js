@@ -3,37 +3,49 @@ import '../components/Content.css';
 
 const Content = () => {
     return (
-        <div className="container">
-            <div className="nav"></div>
-            <div className="content">
-                <header className="header">
-                    <p>WHATSAPP WEB</p>
-                </header>
-                <body className="paper">
-                    <div className="top">
-                        <div className="top-left">
-                            <p>To use WhatsApp on your computer :</p>
-                            <ul>
-                                <ol>1. Open WhatsApp on your phone</ol>
-                                <ol>2. Tap Menu : or Settings and select<p>WhatsApp Web</p></ol>
-                                <ol>3. Point your phone to this screen to capture the code</ol>
-                            </ul>
-                            <a className="link" href="">Need help to get started?</a>
-                        </div>
-                        <div className="top-right">
-                            <p className="qrcode"></p>
-                            <p className="redais">CLICK TO RELOAD QR CODE</p>
-                            <p>
-                                <input type="checkbox" name="" id=""/> : Keep me signed in
-                            </p>
-                        </div>
-                    </div>
-
-                </body>
-            </div>
-            
-        </div>
-    );
+		<div className="container-fluid">
+			<div className="nav">
+				tset
+			</div>
+			<section className="leftbar">
+				<header className="header-leftbar">
+					<p className="logo">CSS Generator</p>
+					<p className="sub-logo">by superMin</p>
+				</header>
+				<hr/>
+				<body className="leftbar-body">
+					<ul>
+						<p className="menu">Layout</p>
+						<li>Flexbox Items</li>
+						<li>Flexbox Menu Bars</li>
+						<li>Flexbox Gallery</li>
+						<li>Grid Items</li>
+						<li>Grid Pages</li>
+						<li>Float</li>
+					</ul>
+					<ul>
+						<p className="menu">Background</p>
+						<li>Background Color</li>
+						<li>Background Gradient</li>
+						<li>Background Image</li>
+					</ul>
+					<ul>
+						<p className="menu">Border</p>
+						<li>Border</li>
+						<li>Border Radius</li>
+						<li>Box Shadow</li>
+					</ul>
+				</body>
+			</section>
+			<section className="content">
+				<header className="header-content">
+					<p className="dashboard">Dashboard</p>
+					<p className="choosemenu">Choose menu</p>
+				</header>
+				<hr/>
+			</section>
+		</div>
+	);
 }
 
 export default Content;
