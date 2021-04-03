@@ -7,6 +7,7 @@ body {
   font-family: sans-serif;
 }
 nav {
+  position: relative;
   height: 44px;
   background-color: #323232;
   box-shadow: 0 0 5px rgba(0, 0, 0, 2);
@@ -45,6 +46,62 @@ nav {
 .logoMenu {
   display: none;
 }
+
+.search {
+  position: relative;
+  display: none;
+  margin-top: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+  height: 70vh;
+  background-color: white;
+  z-index: 99;
+}
+
+.search p {
+  display: flex;
+  flex-direction: row;
+  padding: 15px;
+  border: solid 1px lightgray;
+  height: 90px;
+}
+
+.form input {
+  padding: 15px;
+  font-size: 20px;
+  border: solid 1px lightgray;
+  border-radius: 5px;
+}
+
+.form-footer {
+  position: absolute;
+  border: solid 1px lightgray;
+  width: 100%;
+  bottom: 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-content: center;
+}
+
+.form button {
+  margin-left: 10px;
+  width: 100px;
+  color: white;
+  background-color: gray;
+  font-size: 20px;
+  border-radius: 5px;
+}
+
+
+#search {
+  color: white;
+  text-decoration: underline;
+  font-size: 20px;  
+  cursor: pointer;
+}
+
 
 @media screen and (max-width: 768px) {
   nav {
@@ -88,14 +145,12 @@ nav {
     position: relative;
     background: #323232;
   }
-
   .line {
     width: 20px;
     height: 2px;
     background: white;
     margin: 5px;
   }
-
   .hamberger {
     position: absolute;
     cursor: pointer;
@@ -104,12 +159,10 @@ nav {
     transform: translate(-5%, -50%);
     z-index: 2;
   }
-
   .hamberger:hover {
     border: 2px solid white;
     border-radius: 3px;
   }
-
   .nav-links {
     position: fixed;
     background: #323232;
@@ -122,7 +175,6 @@ nav {
     pointer-events: none;
     
   }
-
   .nav-links.open {
     clip-path: circle(100px at 90% -10%);
     -webkit-clip-path: circle(1200px at 90% -10%);
