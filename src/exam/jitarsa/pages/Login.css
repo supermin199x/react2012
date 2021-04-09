@@ -1,5 +1,5 @@
 .login-form {
-    padding: 20px;
+    padding: 10px 20px 10px 20px;
     margin-top: 44px;
     max-width: 800px;
     margin-left: auto;
@@ -8,6 +8,13 @@
   
   .login-form h2 {
     text-align: center;
+  }
+
+  .user {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+    font-size: 24px;
   }
   
   input,
@@ -24,7 +31,7 @@
   }
   
   button:hover {
-    background-color: #f44336;
+    background-color: #323232;
     color: white;
   }
   

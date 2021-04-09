@@ -8,9 +8,9 @@ const emptyNote = {
 
 const StateXObject = () => {
   // - States
-  const [note, setNote] = useState(emptyNote); //สร้างโน๊ต
-  const [editNote, setEditNote] = useState(null);
-  const [allNotes, setAllNotes] = useState([]); //เก็บโน๊ตทั้งหมด
+	const [note, setNote] = useState(emptyNote); //สร้างโน๊ต
+	const [editNote, setEditNote] = useState(null);
+	const [allNotes, setAllNotes] = useState([]); //เก็บโน๊ตทั้งหมด
 
   // - Functions form inputs
   function onNoteValueChange(event) {
@@ -166,6 +166,6 @@ const StateXObject = () => {
       {editNoteElement}
     </section>
   );
-};
+}
 
 export default StateXObject;
