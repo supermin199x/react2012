@@ -2,7 +2,7 @@ import React, {useState} from 'react';
 import '../pages/Projects.css';
 import StateXObject from "../exam/StateXObject";
 import Gallery from "../exam/gallery/Gallery";
-import Jitarsa from "../exam/jitarsa/pages/Login";
+import HomeJitarsa from "../exam/jitarsa/pages/HomeJitarsa";
 import {Link} from 'react-router-dom';
 import { useHistory } from "react-router-dom";
 
@@ -10,14 +10,14 @@ import { useHistory } from "react-router-dom";
 const Projects = () => {
     const [url, setUrl] = useState({
         home: "/",
-		jitarsa: "/jitarsa",
+		HomeJitarsa: "/homejitarsa",
 		todolist: "/todolist",
 		gallery: "/gallery",
 		
     });
 
 	const history = useHistory();
-	const goPro01 = () =>  history.push('/jitarsa');
+	const goPro01 = () =>  history.push('/homejitarsa');
 	const goPro02 = () =>  history.push('/gallery');
 	const goPro03 = () =>  history.push('/todolist');
 
@@ -78,7 +78,7 @@ const Projects = () => {
 				</ul>
 			</aside>
 			<content id="content-01" className="content-01">
-				<Jitarsa />		
+				<HomeJitarsa />		
 			</content>
 			<content id="content-02" className="content-02">
 				<StateXObject />
