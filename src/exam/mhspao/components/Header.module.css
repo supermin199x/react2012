@@ -1,0 +1,36 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 60px; 
+    box-shadow: 0px 0px 2px 0px black; 
+}
+
+.logo {
+    width: 30%;
+    text-align: center;
+}
+
+.menu {
+    width: 60%;
+}
+
+.links {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+}
+
+.items:hover {
+    cursor: pointer;
+    color: rgb(0, 41, 94);
+}
+

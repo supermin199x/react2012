@@ -1,0 +1,18 @@
+.navbar {
+    height: 37.8px;
+    background-color: #333333;
+    padding: 8px;
+}
+
+.navlinks {
+    display: flex;
+    flex-direction: row;
+    width: 70%;
+    justify-content: space-around;
+    margin-left: auto;
+}
+
+.navitems {
+    color: lightgray;
+    list-style: none;
+}

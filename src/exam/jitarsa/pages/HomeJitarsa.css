@@ -32,3 +32,31 @@ body {
     width: 100%;
     height: auto;
 }
+
+.navbarJ {
+    height: 6vh;
+    background: #323232;
+}
+
+.navbarJ-items {
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    width: 500px;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+}
+
+.navbarJ-links {
+    font-size: 24px;
+    color: white;
+    cursor: pointer;
+}
+.navbarJ-links:hover {
+    text-decoration: underline;
+}
+
+.main {
+    display: block;
+}
